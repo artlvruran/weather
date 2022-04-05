@@ -49,7 +49,7 @@ html {
           animation: line 1s;
 }
 .menu li:hover a {
-  color: #d94f5c;
+  color: #00a388;
 }
 .menu li:not(:last-child) {
   margin-right: 30px;
