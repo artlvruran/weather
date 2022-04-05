@@ -22,10 +22,6 @@ html {
 .menu {
   display: flex;
   justify-content: center;
-  /*align-items: center;
-  max-width: 720px;
-
-   */
   margin: 25px;
   height: 100vh;
   list-style: none;
@@ -65,4 +61,10 @@ html {
   0% {
     background-position-x: 390px;
   }
+}
+
+
+/*Weather_panel*/
+.weather_panel {
+
 }

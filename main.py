@@ -17,9 +17,7 @@ def general(city):
     current_weather_request = f'https://api.openweathermap.org/data/2.5/weather?lat={pos[1]}&lon={pos[0]}&appid={WEATHER_API_KEY}'
     weather_response = requests.get(current_weather_request).json()
 
-    return weather_response
-
-    return render_template('main.html')
+    return render_template('general.html', city=weather_response["name"])
 
 
 """@app.route("/login")

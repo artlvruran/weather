@@ -8,7 +8,7 @@
 <body>
     <ul class="menu">
         <li>
-            <a href="/">Main</a>
+            <a href="/weather/Нижневартовск">Main</a>
         </li>
         <li>
             <a href="/sign_up">Sign Up</a>
@@ -20,5 +20,10 @@
             <a href="/news">News</a>
         </li>
     </ul>
+    <!-- Begin page content -->
+    <main role="main" class="container">
+        {% block content %}{% endblock %}
+    </main>
 </body>
+
 </html>
