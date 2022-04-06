@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>{{ city }}</h1>
+    <h1 align="center">{{ city }}</h1>
+    <center>
+        <img src={{icon}} alt="oops, something went wrong" height="60px" width="60px">
+    </center>
+    <div class="temperature" align="center">
+        {{ temperature }}
+    </div>
 {% endblock %}

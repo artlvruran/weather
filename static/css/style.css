@@ -23,8 +23,8 @@ html {
   display: flex;
   justify-content: center;
   margin: 25px;
-  height: 100vh;
   list-style: none;
+  overflow: hidden;
 }
 
 .menu li {
@@ -65,6 +65,6 @@ html {
 
 
 /*Weather_panel*/
-.weather_panel {
-
+.temperature {
+  font-size: 50px;
 }
