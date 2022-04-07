@@ -2,10 +2,22 @@
 
 {% block content %}
     <h1 align="center">{{ city }}</h1>
+    <h5 align="center">{{main}}</h5>
     <center>
         <img src={{icon}} alt="oops, something went wrong" height="60px" width="60px">
     </center>
     <div class="temperature" align="center">
         {{ temperature }}
     </div>
+    <h3 align="center">highest: {{max}}, lowest: {{min}}</h3>
+    <ul class="hourly_forecast">
+        {% for elem in forecast_hourly %}
+                <li>
+                    {{elem["time"]}}<br>
+                    <img src={{elem["icon"]}} alt="oops, something went wrong" width="25px" height="25px"> <br>
+                    {{elem["temp"]}}
+                </li>
+        {% endfor %}
+    </ul>
+
 {% endblock %}
