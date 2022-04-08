@@ -35,6 +35,14 @@ def general(city):
                         }
                        for i in range(len(forecast["hourly"]))]
 
+    forecast_daily = [{
+                        "time": datetime.datetime.utcfromtimestamp(int(forecast["daily"][i]["dt"]) + int(forecast["timezone_offset"])).strftime('%d.%m'),
+                        "temp_day": f'{celc_from_kelvin(forecast["daily"][i]["temp"]["day"])} °C',
+                        "temp_night": f'{celc_from_kelvin(forecast["daily"][i]["temp"]["day"])} °C',
+                        "icon": f'https://openweathermap.org/img/wn/{forecast["daily"][i]["weather"][0]["icon"]}.png'
+                        }
+                       for i in range(len(forecast["daily"]))]
+
     params = {
         "city": weather_response["name"] if weather_response["name"] else city,
         "temperature": f'{celc_from_kelvin(weather_response["main"]["temp"])} °C',
@@ -42,7 +50,8 @@ def general(city):
         "main": weather_response['weather'][0]['description'],
         "max": f"{celc_from_kelvin(weather_response['main']['temp_max'])} °C",
         "min": f"{celc_from_kelvin(weather_response['main']['temp_min'])} °C",
-        "forecast_hourly": forecast_hourly
+        "forecast_hourly": forecast_hourly,
+        "forecast_daily": forecast_daily
     }
 
     return render_template('general.html', **params)
