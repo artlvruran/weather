@@ -11,30 +11,24 @@
     </div>
     <h3 align="center">highest: {{max}}, lowest: {{min}}</h3>
     <div class="shadow p-30 mb-5 bg-body rounded">
-        <ul class="hourly_forecast">
-            {% for elem in forecast_hourly %}
-                    <li>
-                        {{elem["time"]}}<br>
-                        <img src={{elem["icon"]}} alt="oops, something went wrong" width="25px" height="25px"> <br>
-                        {{elem["temp"]}}
-                    </li>
-            {% endfor %}
-        </ul>
+            <ul class="hourly_forecast">
+                {% for elem in forecast_hourly %}
+                        <li>
+                            {{elem["time"]}}<br>
+                            <img src={{elem["icon"]}} alt="oops, something went wrong" width="25px" height="25px"> <br>
+                            {{elem["temp"]}}
+                        </li>
+                {% endfor %}
+            </ul>
     </div>
     <div class="shadow p-30 mb-5 bg-body rounded">
         <ul class="hourly_forecast">
             {% for elem in forecast_daily %}
                     <li>
                         {{elem["time"]}}<br>
-                        <h8>day</h8><br>
-                        <img src={{elem["icon"]}} alt="oops, something went wrong" width="25px" height="25px"> <br>
-                        {{elem["temp_day"]}}
-                    </li>
-                    <li>
-                        {{elem["time"]}}<br>
-                        <h8>night</h8><br>
-                        <img src={{elem["icon"]}} alt="oops, something went wrong" width="25px" height="25px"> <br>
-                        {{elem["temp_night"]}}
+                       <img src={{elem["icon"]}} alt="oops, something went wrong" width="25px" height="25px"> <br>
+                        day {{elem["temp_day"]}}<br>
+                        night {{elem["temp_night"]}}
                     </li>
             {% endfor %}
         </ul>
