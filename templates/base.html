@@ -9,20 +9,35 @@
 <body>
     <ul class="menu">
         <li>
-            <a href="/weather/Нижневартовск">Main</a>
+            {% if not current_user.is_anonymous%}
+            <a href="/weather/{{current_user.city}}">Main</a>
+            {% else %}
+            <a href="weather/Moscow">Main</a>
+            {% endif %}
         </li>
         <li>
             <a href="/register">Sign Up</a>
         </li>
+        {% if current_user.is_anonymous %}
         <li>
             <a href="/login">Log In</a>
         </li>
+        {% else %}
+        <li>
+            <a href="/logout">Log Out</a>
+        </li>
+        {% endif %}
         <li>
             <a href="/news">News</a>
         </li>
         <li>
             <a href="/maps">Map</a>
         </li>
+        {% if not current_user.is_anonymous %}
+        <li>
+            <a href="/user/{{ current_user.name }}">Profile</a>
+        </li>
+        {% endif %}
     </ul>
     <!-- Begin page content -->
     <main role="main" class="container">

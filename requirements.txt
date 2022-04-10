@@ -1,3 +1,5 @@
 Flask~=2.0.2
 requests~=2.27.1
-pygeoip~=0.3.2
+SQLAlchemy~=1.4.32
+Werkzeug~=2.0.3
+WTForms~=3.0.1

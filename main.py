@@ -8,7 +8,7 @@ from flask import Flask, render_template, request, redirect
 from constants import *
 from forms.user import RegisterForm, LoginForm
 from data import db_session
-from flask_login import LoginManager, login_user
+from flask_login import LoginManager, login_user, login_required, current_user, logout_user
 from data.users import User
 
 
@@ -20,6 +20,7 @@ db_session.global_init("db/users.db")
 app = Flask(__name__)
 login_manager = LoginManager()
 login_manager.init_app(app)
+login_manager.login_view = 'login'
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 
 
@@ -30,6 +31,7 @@ def load_user(user_id):
 
 
 @app.route("/weather/<city>")
+@login_required
 def general(city):
     geocoder_req = f"https://geocode-maps.yandex.ru/1.x/?apikey=40d1649f-0493-4b70-98ba-98533de7710b&geocode={city}&format=json"
     response = requests.get(geocoder_req).json()
@@ -75,7 +77,13 @@ def general(city):
     return render_template('general.html', **params)
 
 
-@app.route("/register")
+@app.route("/logout")
+def logout():
+    logout_user()
+    return redirect('/weather/Moscow')
+
+
+@app.route("/register", methods=['POST', 'GET'])
 def register():
     form = RegisterForm()
     if form.validate_on_submit():
@@ -109,13 +117,22 @@ def login():
         user = db_sess.query(User).filter(User.email == form.email.data).first()
         if user and user.check_password(form.password.data):
             login_user(user, remember=form.remember_me.data)
-            return redirect("/")
+            return redirect(f"/weather/{user.city}")
         return render_template('login.html',
                                message="Incorrect login or password",
                                form=form)
     return render_template('login.html', title='Logging in', form=form)
 
 
+@app.route('/user/<username>')
+@login_required
+def user(username):
+    db_sess = db_session.create_session()
+    user = db_sess.query(User).filter(User.name == username).first()
+    params = {
+        'user': user
+    }
+    return render_template('user.html', **params)
 
 
 """@app.route("/news")
