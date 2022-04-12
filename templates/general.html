@@ -3,7 +3,7 @@
 {% block content %}
     <label>
         <form action="/weather/{{city}}" method="post">
-            <input type="search" placeholder="Search city"/>
+            <input name='search' type="search" placeholder="Search city"/>
         </form>
     </label>
     <h1 align="center">{{ city }}</h1>
