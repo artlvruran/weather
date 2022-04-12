@@ -2,9 +2,19 @@
 
 {% block content %}
     <label>
-        <form action="/weather/{{city}}" method="post">
-            <input name='search' type="search" placeholder="Search city"/>
-        </form>
+        <div id="cover">
+          <form action="/weather/{{city}}" method="post">
+            <div class="tb">
+              <div class="td"><input type="text" placeholder="Search" required name="'search"></div>
+              <div class="td" id="s-cover">
+                <button type="submit">
+                  <div id="s-circle"></div>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
     </label>
     <h1 align="center">{{ city }}</h1>
     <h5 align="center">{{main}}</h5>
