@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <label>
+        <form action="/weather/{{city}}" method="post">
+            <input type="search" placeholder="Search city"/>
+        </form>
+    </label>
     <h1 align="center">{{ city }}</h1>
     <h5 align="center">{{main}}</h5>
     <center>
@@ -38,5 +43,6 @@
         <li class="list-group-item">pressure <br> {{pressure}}</li>
         <li class="list-group-item">wind <br> {{wind_speed}}</li>
     </ul>
+    <a href="/"><button class="bn632-hover bn18">Select city</button></a>
 
 {% endblock %}
