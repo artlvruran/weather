@@ -66,5 +66,5 @@ def get_weather(city):
 
 @blueprint.route('/weather/<city>', methods=['POST'])
 def get_city(city):
-    text = request.form['search_city']
+    text = request.form['search']
     return redirect(f'/weather/{text}')

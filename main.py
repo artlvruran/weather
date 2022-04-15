@@ -1,6 +1,8 @@
 import logging
 import os
 import sys
+
+import flask_login
 import requests
 import datetime
 
@@ -11,6 +13,7 @@ from data import db_session
 from flask_login import LoginManager, login_user, login_required, current_user, logout_user
 from data.users import User
 from data import weather
+import logging
 
 
 db_session.global_init("db/users.db")
@@ -20,6 +23,7 @@ login_manager.init_app(app)
 login_manager.login_view = 'login'
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 app.register_blueprint(weather.blueprint)
+logging.basicConfig(filename='example.log')
 
 
 @login_manager.user_loader
@@ -80,10 +84,14 @@ def login():
 def user(username):
     db_sess = db_session.create_session()
     user = db_sess.query(User).filter(User.name == username).first()
-    params = {
-        'user': user
-    }
-    return render_template('user.html', **params)
+    if user.name == flask_login.current_user.name:
+        params = {
+            'user': user
+        }
+        logging.warning(f'user: {flask_login.current_user.name}')
+        return render_template('user.html', **params)
+    else:
+        return 'Access denied'
 
 
 """@app.route("/news")
