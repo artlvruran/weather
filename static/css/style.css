@@ -254,17 +254,6 @@ Search box
   outline: none;
 }
 
-html,
-body {
-  height: 100%;
-  min-height: 100%;
-}
-
-body {
-  margin: 0;
-  background-color: #ffd8d8;
-}
-
 .tb {
   display: table;
   width: 100%;
@@ -286,17 +275,11 @@ button {
 }
 
 #cover {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  width: 550px;
   padding: 35px;
-  margin: -83px auto 0 auto;
   background-color: #ff7575;
   border-radius: 20px;
   box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #ffffffeb;
-  transform: scale(0.6);
+  transform: scale(0.3);
 }
 
 form {

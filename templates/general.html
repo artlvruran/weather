@@ -3,7 +3,7 @@
 {% block content %}
     <label>
         <div id="cover">
-          <form action="/weather/{{city}}" method="post">
+          <form name="search_city" action="/weather/{{city}}" method="post">
             <div class="tb">
               <div class="td"><input type="text" placeholder="Search" required name="'search"></div>
               <div class="td" id="s-cover">
@@ -53,6 +53,5 @@
         <li class="list-group-item">pressure <br> {{pressure}}</li>
         <li class="list-group-item">wind <br> {{wind_speed}}</li>
     </ul>
-    <a href="/"><button class="bn632-hover bn18">Select city</button></a>
 
 {% endblock %}

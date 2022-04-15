@@ -4,9 +4,6 @@ import datetime
 from constants import *
 from flask import render_template, request, redirect, url_for
 from flask_login import login_required
-import logging
-
-logging.basicConfig(filename='example.log')
 
 
 def celc_from_kelvin(temp):
@@ -69,6 +66,5 @@ def get_weather(city):
 
 @blueprint.route('/weather/<city>', methods=['POST'])
 def get_city(city):
-    text = request.form['search']
-    logging.warning(f'getting_city {text}')
+    text = request.form['search_city']
     return redirect(f'/weather/{text}')
