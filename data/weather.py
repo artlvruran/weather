@@ -1,3 +1,5 @@
+import logging
+
 import flask
 import requests
 import datetime
@@ -60,6 +62,10 @@ def get_weather(city):
         "pressure": f'{round(0.750064 * float(weather_response["main"]["pressure"]), 1)} Hg',
         "wind_speed": f'{weather_response["wind"]["speed"]} m/s'
     }
+
+    request = f'https://pixabay.com/api/?key={PIXABAY_API_KEY}&q={params["city"]}&image_type=photo&pretty=true'
+    image_response = requests.get(request).json()
+    params["image"] = image_response["hits"][0]['largeImageURL']
 
     return render_template('general.html', **params)
 
