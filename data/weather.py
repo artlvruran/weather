@@ -65,7 +65,15 @@ def get_weather(city):
 
     request = f'https://pixabay.com/api/?key={PIXABAY_API_KEY}&q={params["city"]}&image_type=photo&pretty=true'
     image_response = requests.get(request).json()
-    params["image"] = image_response["hits"][0]['largeImageURL']
+    try:
+        params["image"] = image_response["hits"][0]['largeImageURL']
+    except IndexError:
+        try:
+            request = f'https://pixabay.com/api/?key={PIXABAY_API_KEY}&q={city}&image_type=photo&pretty=true'
+            image_response = requests.get(request).json()
+            params["image"] = image_response["hits"][0]['largeImageURL']
+        except IndexError:
+            params["image"] = BASE_CITY_IMAGE
 
     return render_template('general.html', **params)
 

@@ -1,30 +1,45 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <label>
-        <div id="cover">
-          <form name="search_city" action="/weather/{{city}}" method="post">
-            <div class="tb">
-              <div class="td"><input type="text" placeholder="Search" required name="search"></div>
-              <div class="td" id="s-cover">
-                <button type="submit">
-                  <div id="s-circle"></div>
-                  <span></span>
-                </button>
-              </div>
-            </div>
-          </form>
+    <div class="general">
+        <div style="background-image:url({{image}});
+                    -webkit-filter: blur(8px);
+                    position: absolute;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        align-self: center;
+                        height: 450px;
+                        width: 68%;
+                        max-width: 68%;
+                    ">
         </div>
-    </label>
-    <h1 align="center">{{ city }}</h1>
-    <h5 align="center">{{main}}</h5>
-    <center>
-        <img src={{icon}} alt="oops, something went wrong" height="60px" width="60px">
-    </center>
-    <div class="temperature" align="center">
-        {{ temperature }}
+        <div style="position: relative; z-index: 2; color:white">
+            <div>
+                <div id="cover">
+                  <form name="search_city" action="/weather/{{city}}" method="post">
+                    <div class="tb">
+                      <div class="td"><input type="text" placeholder="Search" required name="search"></div>
+                      <div class="td" id="s-cover">
+                        <button type="submit">
+                          <div id="s-circle"></div>
+                          <span></span>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+            <h1 align="center">{{ city }}</h1>
+            <h5 align="center">{{main}}</h5>
+            <center>
+                <img src={{icon}} alt="oops, something went wrong" height="60px" width="60px">
+            </center>
+            <div class="temperature" align="center">
+                {{ temperature }}
+            </div>
+            <h3 align="center">highest: {{max}}, lowest: {{min}}</h3>
+        </div>
     </div>
-    <h3 align="center">highest: {{max}}, lowest: {{min}}</h3>
     <div class="shadow p-30 mb-5 bg-body rounded">
             <ul class="hourly_forecast">
                 {% for elem in forecast_hourly %}

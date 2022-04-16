@@ -3,7 +3,6 @@ html {
   box-sizing: border-box;
 }
 
-
 *,
 *:before,
 *:after {
@@ -385,5 +384,8 @@ button span:after {
   background-color: #fff;
 }
 
-
+label {
+  justify-content: center;
+  align-items: center;
+}
 
