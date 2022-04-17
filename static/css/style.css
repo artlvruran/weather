@@ -276,9 +276,9 @@ button {
 
 #cover {
   padding: 35px;
-  background-color: #ff7575;
+  background-color: #00000040;
   border-radius: 20px;
-  box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #ffffffeb;
+  box-shadow: 0 10px 40px #16121294, 0 0 0 20px #00000000;
   transform: scale(0.3);
 }
 
@@ -294,7 +294,7 @@ input[type="text"] {
 }
 
 input[type="text"]::placeholder {
-  color: #e16868;
+  color: rgba(255, 255, 255, 0.55);
 }
 
 #s-cover {

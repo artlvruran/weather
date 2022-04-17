@@ -6,14 +6,20 @@ import flask_login
 import requests
 import datetime
 
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, flash, url_for
 from constants import *
 from forms.user import RegisterForm, LoginForm
 from data import db_session
 from flask_login import LoginManager, login_user, login_required, current_user, logout_user
 from data.users import User
 from data import weather, map_page
+from flask_uploads import UploadSet, IMAGES
+from werkzeug.utils import secure_filename
 import logging
+
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
 
 
 db_session.global_init("db/users.db")
@@ -22,8 +28,10 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.register_blueprint(weather.blueprint)
 app.register_blueprint(map_page.blueprint)
+photos = UploadSet('photos', IMAGES)
 logging.basicConfig(filename='example.log')
 
 
@@ -94,6 +102,13 @@ def user(username):
     else:
         return 'Access denied'
 
+
+@app.route('/user/<username>/upload', methods=['GET', 'POST'])
+@login_required
+def upload_photo(username):
+    if request.method == 'POST' and 'photo' in request.files:
+        filename = photos.save(request.files['photo'])
+        rec = Photo()
 
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
