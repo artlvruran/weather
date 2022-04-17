@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div style="width: 100%; height: 80vh;" id="map"></div>
+    <script>
+        var city = { lng: {{lon}}, lat:{{lat}}}
+        var map = tt.map({
+            key: 'IP5RMG2Jx0ZOHocnOe1fG6TFf8t5FAf3',
+            container: 'map',
+            center: city,
+            zoom:13
+        })
+
+        var cloudSource = {
+            type: 'raster',
+            tiles: ['https://tile.openweathermap.org/map/clouds_new/{z}/{x}/{y}.png?appid=41ae74e40de123d0cacc03e614f72256'],
+            tileSize: 256,
+            minZoom: 0,
+            maxZoom: 12,
+            attribution: 'OpenWeatherMap.Org'
+        }
+        var rainSource = {
+            type: 'raster',
+            tiles: ['https://tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=41ae74e40de123d0cacc03e614f72256'],
+            tileSize: 256,
+            minZoom: 0,
+            maxZoom: 12,
+            attribution: 'OpenWeatherMap.Org'
+        }
+        var cloudLayer = {
+            'id': 'cloud_layer',
+            'type': 'raster',
+            'source': 'cloud_source',
+            'layout': { 'visibility': 'visible'}
+        }
+        var rainLayer = {
+            'id': 'rain_layer',
+            'type': 'raster',
+            'source': 'rain_source',
+            'layout': { 'visibility': 'visible'}
+        }
+
+        map.on('load', function(){
+            map.addSource('cloud_source', cloudSource)
+            map.addLayer(cloudLayer)
+
+            map.addSource('rain_source', rainSource)
+            map.addLayer(rainLayer)
+        })
+
+        map.on('click', function (event) {
+            console.log(event.lngLat)
+            weatherForCityAround(event.lngLat)
+        })
+        function createDOM(city) {
+            let div = document.createElement('div')
+
+            let temp = document.createTextNode(city.main.temp.toFixed(0) + ' F')
+
+            div.appendChild(temp)
+
+            let icon = city.weather[0].icon
+            let image = document.createElement('img')
+            image.src = 'https://openweathermap.org/img/wn/' + icon + '@2x.png'
+            div.appendChild(image)
+
+            let bio = document.createTextNode(city.weather[0].description)
+            div.appendChild(bio)
+
+            return div
+        }
+
+        async function weatherForCityAround(lngLat) {
+            var url = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&lat={lat}&lon={lon}&lang=en&appid=41ae74e40de123d0cacc03e614f72256'
+            url = url.replace('{lat}', lngLat.lat)
+            url = url.replace('{lon}', lngLat.lng)
+            let weatherResponse = await fetch(url)
+            let weatherData = await weatherResponse.json()
+            console.log(weatherData)
+            weatherData.list.forEach(element => {
+                console.log(element)
+            });
+        }
+    </script>
+{% endblock %}
