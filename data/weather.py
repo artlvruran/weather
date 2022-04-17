@@ -29,7 +29,7 @@ def get_weather(city):
     # Текущая погода
     current_weather_request = f'https://api.openweathermap.org/data/2.5/weather?lat={pos[1]}&lon={pos[0]}&lang=en&appid={WEATHER_API_KEY}'
     weather_response = requests.get(current_weather_request).json()
-
+    logging.warning(current_weather_request)
     # Прогноз
     forecast_request = f'https://api.openweathermap.org/data/2.5/onecall?lat={pos[1]}&lon={pos[0]}&appid={WEATHER_API_KEY}'
     forecast = requests.get(forecast_request).json()

@@ -12,7 +12,7 @@ from forms.user import RegisterForm, LoginForm
 from data import db_session
 from flask_login import LoginManager, login_user, login_required, current_user, logout_user
 from data.users import User
-from data import weather, map
+from data import weather, map_page
 import logging
 
 
@@ -23,7 +23,7 @@ login_manager.init_app(app)
 login_manager.login_view = 'login'
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 app.register_blueprint(weather.blueprint)
-app.register_blueprint(map.blueprint)
+app.register_blueprint(map_page.blueprint)
 logging.basicConfig(filename='example.log')
 
 

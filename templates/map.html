@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <div id="cover">
+      <form name="search_map" action="" method="post">
+        <div class="tb">
+          <div class="td"><input type="text" placeholder="Search" required name="search"></div>
+          <div class="td" id="s-cover">
+            <button type="submit">
+              <div id="s-circle"></div>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
     <div style="width: 100%; height: 80vh;" id="map"></div>
     <script>
         var city = { lng: {{lon}}, lat:{{lat}}}
@@ -13,7 +25,7 @@
 
         var cloudSource = {
             type: 'raster',
-            tiles: ['https://tile.openweathermap.org/map/clouds_new/{z}/{x}/{y}.png?appid=41ae74e40de123d0cacc03e614f72256'],
+            tiles: ['https://tile.openweathermap.org/map/clouds_new/{z}/{x}/{y}.png?appid={{WEATHER_API}}'],
             tileSize: 256,
             minZoom: 0,
             maxZoom: 12,
@@ -21,7 +33,15 @@
         }
         var rainSource = {
             type: 'raster',
-            tiles: ['https://tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=41ae74e40de123d0cacc03e614f72256'],
+            tiles: ['https://tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid={{WEATHER_API}}'],
+            tileSize: 256,
+            minZoom: 0,
+            maxZoom: 12,
+            attribution: 'OpenWeatherMap.Org'
+        }
+        var tempSource = {
+            type: 'raster',
+            tiles: ['https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid={{WEATHER_API}}'],
             tileSize: 256,
             minZoom: 0,
             maxZoom: 12,
@@ -39,6 +59,12 @@
             'source': 'rain_source',
             'layout': { 'visibility': 'visible'}
         }
+        var tempLayer = {
+            'id': 'temp_layer',
+            'type': 'raster',
+            'source': 'temp_source',
+            'layout': { 'visibility': 'visible'}
+        }
 
         map.on('load', function(){
             map.addSource('cloud_source', cloudSource)
@@ -46,6 +72,9 @@
 
             map.addSource('rain_source', rainSource)
             map.addLayer(rainLayer)
+
+            map.addSource('temp_source', tempSource)
+            map.addLayer(tempLayer)
         })
 
         map.on('click', function (event) {
@@ -55,7 +84,7 @@
         function createDOM(city) {
             let div = document.createElement('div')
 
-            let temp = document.createTextNode(city.main.temp.toFixed(0) + ' F')
+            let temp = document.createTextNode(((city.main.temp.toFixed(0) - 32) * 5 / 9).toFixed(2) + ' °С')
 
             div.appendChild(temp)
 
@@ -71,15 +100,16 @@
         }
 
         async function weatherForCityAround(lngLat) {
-            var url = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&lat={lat}&lon={lon}&lang=en&appid=41ae74e40de123d0cacc03e614f72256'
+            var url = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&lat={lat}&lon={lon}&lang=en&appid={{WEATHER_API}}'
             url = url.replace('{lat}', lngLat.lat)
             url = url.replace('{lon}', lngLat.lng)
             let weatherResponse = await fetch(url)
             let weatherData = await weatherResponse.json()
             console.log(weatherData)
-            weatherData.list.forEach(element => {
-                console.log(element)
-            });
+            var popup = new tt.Popup({maxWidth: 'none'})
+                .setDOMContent(createDOM(weatherData))
+                .setLngLat(weatherData.coord)
+                .addTo(map)
         }
     </script>
 {% endblock %}
