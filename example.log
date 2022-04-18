@@ -1,0 +1,711 @@
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=51.507351&lon=-0.127696&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:42:16] "GET /weather/london HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:42:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:43:04] "[32mGET /map/london HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:43:04] "GET /map/-0.127696/51.507351?WEATHER_API=1123bb2d4b885327b25dcfe7dee216a7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:43:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:43:13] "[31m[1mPOST /map/-0.127696/51.507351?WEATHER_API=1123bb2d4b885327b25dcfe7dee216a7 HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:44:42] "[31m[1mPOST /map/-0.127696/51.507351?WEATHER_API=1123bb2d4b885327b25dcfe7dee216a7 HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:45:22] "GET /map/-0.127696/51.507351 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:45:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:50:16] "[32mGET /map/london HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:50:17] "GET /map/-0.127696/51.507351 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:50:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:50:28] "[32mPOST /map/-0.127696/51.507351 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:50:29] "[32mGET /map/Краков HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:50:29] "GET /map/19.936742/50.061971 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:50:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:55:57] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:55:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 19:56:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 20:02:16] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 20:02:16] "GET /static/css/style.css HTTP/1.1" 200 -
+ERROR:main:Exception on /weather/london [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001CECD9E91C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='geocode-maps.yandex.ru', port=443): Max retries exceeded with url: /1.x/?apikey=40d1649f-0493-4b70-98ba-98533de7710b&geocode=london&format=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001CECD9E91C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\data\weather.py", line 26, in get_weather
+    response = requests.get(geocoder_req).json()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='geocode-maps.yandex.ru', port=443): Max retries exceeded with url: /1.x/?apikey=40d1649f-0493-4b70-98ba-98533de7710b&geocode=london&format=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001CECD9E91C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 20:02:31] "[35m[1mGET /weather/london HTTP/1.1[0m" 500 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=51.507351&lon=-0.127696&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 20:02:58] "GET /weather/london HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 20:02:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 20:03:25] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2022 20:03:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /weather/london [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001CECDA77610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='geocode-maps.yandex.ru', port=443): Max retries exceeded with url: /1.x/?apikey=40d1649f-0493-4b70-98ba-98533de7710b&geocode=london&format=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001CECDA77610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\data\weather.py", line 26, in get_weather
+    response = requests.get(geocoder_req).json()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='geocode-maps.yandex.ru', port=443): Max retries exceeded with url: /1.x/?apikey=40d1649f-0493-4b70-98ba-98533de7710b&geocode=london&format=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001CECDA77610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 18:06:23] "[35m[1mGET /weather/london HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+ERROR:main:Exception on /user/artlvr [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1808, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: users.avatar_image
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 273, in decorated_view
+    elif not current_user.is_authenticated:
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\local.py", line 436, in __get__
+    obj = instance._get_current_object()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\local.py", line 565, in _get_current_object
+    return self.__local()  # type: ignore
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 359, in _get_user
+    current_app.login_manager._load_user()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\login_manager.py", line 355, in _load_user
+    user = self._user_callback(user_id)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\main.py", line 40, in load_user
+    return db_sess.query(User).get(user_id)
+  File "<string>", line 2, in get
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\deprecations.py", line 401, in warned
+    return fn(*args, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 943, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 947, in _get_impl
+    return self.session._get_impl(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 2892, in _get_impl
+    return db_load_fn(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 1692, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1620, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1487, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1851, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 2032, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1808, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: users.avatar_image
+[SQL: SELECT users.id AS users_id, users.name AS users_name, users.about AS users_about, users.city AS users_city, users.email AS users_email, users.hashed_password AS users_hashed_password, users.created_date AS users_created_date, users.avatar_image AS users_avatar_image 
+FROM users 
+WHERE users.id = ?]
+[parameters: ('1',)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:02:45] "[35m[1mGET /user/artlvr HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:03:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:03:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:03:46] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:03:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /register [POST]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1808, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.InterfaceError: Error binding parameter 6 - probably unsupported type.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\main.py", line 70, in register
+    db_sess.commit()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\persistence.py", line 244, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\persistence.py", line 1237, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1620, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1487, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1851, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 2032, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1808, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InterfaceError: (sqlite3.InterfaceError) Error binding parameter 6 - probably unsupported type.
+[SQL: INSERT INTO users (name, about, city, email, hashed_password, created_date, avatar_image) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('artlvr', '**information about user**', 'Washington', 'marincyrill@yandex.ru', 'pbkdf2:sha256:260000$MSyAOTl9808OqZCi$693734411ff8190ee3896de4b340117f831c8824cacf94ea109315289261cae5', '2022-04-18 20:04:38.921944', <sqlalchemy.sql.elements.Null object at 0x000001E7646BE970>)]
+(Background on this error at: https://sqlalche.me/e/14/rvf5)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:04:39] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+ERROR:main:Exception on /register [POST]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1808, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.InterfaceError: Error binding parameter 6 - probably unsupported type.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\main.py", line 72, in register
+    db_sess.commit()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\persistence.py", line 244, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\persistence.py", line 1237, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1620, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1487, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1851, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 2032, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\base.py", line 1808, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InterfaceError: (sqlite3.InterfaceError) Error binding parameter 6 - probably unsupported type.
+[SQL: INSERT INTO users (name, about, city, email, hashed_password, created_date, avatar_image) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('artlvr', '**information about user**', 'Washington', 'marincyrill@yandex.ru', 'pbkdf2:sha256:260000$HgzeGluWbY39Dli8$2639397d893e74fd8c73ad3b79a8871382d01f67afb0396bc978af91034bf8bc', '2022-04-18 20:07:08.418631', <function null at 0x0000020F6D081820>)]
+(Background on this error at: https://sqlalche.me/e/14/rvf5)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:07:08] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:08:28] "[32mPOST /register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:08:28] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:08:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:08:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:08:37] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:08:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:08:47] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:08:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /user/None [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\main.py", line 98, in user
+    if user.name == flask_login.current_user.name:
+AttributeError: 'NoneType' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 279, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\main.py", line 98, in user
+    if user.name == flask_login.current_user.name:
+AttributeError: 'NoneType' object has no attribute 'name'
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:08:47] "[35m[1mGET /user/None HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+ERROR:main:Exception on /user/artlvr [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\main.py", line 107, in user
+    return render_template('user.html', **params)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\templates\base.html", line 44, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\templates\user.html", line 8, in block 'content'
+    <img src="{{ user.avatar(128)}}", alt="oops, something went wrong">
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\data\users.py", line 31, in avatar
+    if self.avatar_image == sqlalchemy.null():
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\elements.py", line 3890, in __bool__
+    raise TypeError("Boolean value of this clause is not defined")
+TypeError: Boolean value of this clause is not defined
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:09:25] "[35m[1mGET /user/artlvr HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:11:10] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:11:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:11:39] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:11:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:13:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /user/artlvr [POST]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\main.py", line 100, in user
+    filename = images.save(form.image.data)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_uploads.py", line 416, in save
+    raise UploadNotAllowed()
+flask_uploads.UploadNotAllowed
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:13:48] "[35m[1mPOST /user/artlvr HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+ERROR:main:Exception on /user/artlvr [POST]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\main.py", line 100, in user
+    filename = images.save(form.image.data)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_uploads.py", line 416, in save
+    raise UploadNotAllowed()
+flask_uploads.UploadNotAllowed
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:23:18] "[35m[1mPOST /user/artlvr HTTP/1.1[0m" 500 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:23:33] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:23:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:23:55] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:23:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:24:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:24:54] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:24:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:42:23] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:42:24] "[33mGET /uploads/purple_guy_2.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:42:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:46:01] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:46:02] "[33mGET /uploads/purple_guy.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:46:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:46:14] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:46:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:46:14] "[33mGET /uploads/purple_guy_1.jpg HTTP/1.1[0m" 404 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:50:14] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:50:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:50:14] "[33mGET /uploads/hungary.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:50:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:51:26] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:51:26] "[33mGET /uploads/hungary_1.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:51:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:54:30] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:54:31] "[33mGET /uploads/hungary_2.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:54:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:56:03] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:56:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:56:03] "[33mGET /uploads/hungary_3.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+ERROR:main:Exception on /user/artlvr [POST]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\main.py", line 105, in user
+    return render_template('user.html', **params)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\templates\base.html", line 44, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\templates\user.html", line 8, in block 'content'
+    <img src="{{ user.avatar(128)}}", alt="oops, something went wrong">
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\data\users.py", line 36, in avatar
+    return url_for('uploads', filename=self.avatar_image)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'uploads' with values ['filename']. Did you mean '_uploads.uploaded_file' instead?
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:58:12] "[35m[1mPOST /user/artlvr HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+ERROR:main:Exception on /user/artlvr [POST]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1599, in ensure_sync
+    return self.async_to_sync(func)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1620, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:08] "[35m[1mPOST /user/artlvr HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /user/artlvr [POST]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1599, in ensure_sync
+    return self.async_to_sync(func)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1620, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:08] "[35m[1mPOST /user/artlvr HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /user/artlvr [POST]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1599, in ensure_sync
+    return self.async_to_sync(func)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1620, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:08] "[35m[1mPOST /user/artlvr HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /user/artlvr [POST]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1599, in ensure_sync
+    return self.async_to_sync(func)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1620, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:16] "[35m[1mPOST /user/artlvr HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /user/artlvr [POST]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1599, in ensure_sync
+    return self.async_to_sync(func)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1620, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:16] "[35m[1mPOST /user/artlvr HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /user/artlvr [POST]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1599, in ensure_sync
+    return self.async_to_sync(func)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1620, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:16] "[35m[1mPOST /user/artlvr HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:39] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:40] "[33mGET /uploads/hungary_5.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:01:46] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:01:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:02:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:02:36] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:02:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:02:59] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:02:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:02:59] "[33mGET /uploads/knight.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:03:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:05:21] "[33mGET /user/uploads/knight.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:05:34] "[33mGET /uploads/knight.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:05:39] "[33mGET /user/uploads/knight.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:05:45] "[33mGET /user/uploads/knight.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:05:59] "[33mGET /uploads/knight.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:08:54] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:08:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:08:56] "GET /static/uploads/knight.jpg HTTP/1.1" 200 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:19:27] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:19:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:20:39] "[32mGET /map/Washington HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:20:40] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:20:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
