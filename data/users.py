@@ -32,4 +32,4 @@ class User(SqlAlchemyBase, UserMixin):
             digest = md5(self.email.lower().encode('utf-8')).hexdigest()
             return f'https://www.gravatar.com/avatar/{digest}?d=identicon&s={size}'
         else:
-            return '/static/uploads/' + self.avatar_image
+            return '/static/tmp/' + self.avatar_image
