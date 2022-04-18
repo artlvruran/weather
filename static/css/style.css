@@ -389,3 +389,7 @@ label {
   align-items: center;
 }
 
+.sbutton {
+  color: black;
+  border-radius: 20px;
+}
