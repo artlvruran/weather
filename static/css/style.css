@@ -398,7 +398,6 @@ label {
   --feedback-form-input: #f4f4f4;
 }
 .submit-feedback {
-  padding: 10px 30px;
   font-size: 24px;
   cursor: pointer;
   border-radius: 7px;
@@ -406,6 +405,8 @@ label {
   background-color: var(--feedback-secondary-color);
   color: var(--feedback-primary-color);
   transition: all 0.3s;
+  width: 107px;
+  height: 50px;
 }
 .submit-feedback:hover {
   border-radius: 0px;
