@@ -91,6 +91,7 @@ def user(username):
         if form.validate_on_submit():
             filename = images.save(form.image.data)
             user.avatar_image = filename
+            db_sess.commit()
         params = {
             'user': user,
             'form': form
