@@ -1,25 +1,14 @@
-import logging
-import os
-import sys
-
-import flask_login
-import requests
-import datetime
-
-from flask import Flask, render_template, request, redirect, flash, url_for
+import sqlalchemy
+from flask import Flask, render_template, redirect
 from constants import *
 from forms.user import RegisterForm, LoginForm
+from forms.image_load import ImageForm
 from data import db_session
 from flask_login import LoginManager, login_user, login_required, current_user, logout_user
 from data.users import User
 from data import weather, map_page
-from flask_uploads import UploadSet, IMAGES
-from werkzeug.utils import secure_filename
+from flask_uploads import UploadSet, IMAGES, configure_uploads
 import logging
-
-
-def allowed_file(filename):
-    return '.' in filename and filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
 
 
 db_session.global_init("db/users.db")
@@ -28,10 +17,11 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['UPLOADED_PHOTOS_DEST'] = UPLOAD_FOLDER
 app.register_blueprint(weather.blueprint)
 app.register_blueprint(map_page.blueprint)
-photos = UploadSet('photos', IMAGES)
+images = UploadSet('photos', IMAGES)
+configure_uploads(app, images)
 logging.basicConfig(filename='example.log')
 
 
@@ -64,7 +54,8 @@ def register():
             name=form.name.data,
             email=form.email.data,
             about=form.about.data,
-            city=form.city.data
+            city=form.city.data,
+            avatar_image=sqlalchemy.null()
         )
         user.set_password(form.password.data)
         db_sess.add(user)
@@ -88,27 +79,25 @@ def login():
     return render_template('login.html', title='Logging in', form=form)
 
 
-@app.route('/user/<username>')
+@app.route('/user/<username>', methods=['GET', 'POST'])
 @login_required
 def user(username):
+    form = ImageForm()
     db_sess = db_session.create_session()
     user = db_sess.query(User).filter(User.name == username).first()
-    if user.name == flask_login.current_user.name:
+    if user.name == current_user.name:
+        if form.validate_on_submit():
+            filename = images.save(form.image.data)
+            user.avatar_image = filename
         params = {
-            'user': user
+            'user': user,
+            'form': form
         }
-        logging.warning(f'user: {flask_login.current_user.name}')
+        logging.warning(f'user: {current_user.name}')
         return render_template('user.html', **params)
     else:
         return 'Access denied'
 
-
-@app.route('/user/<username>/upload', methods=['GET', 'POST'])
-@login_required
-def upload_photo(username):
-    if request.method == 'POST' and 'photo' in request.files:
-        filename = photos.save(request.files['photo'])
-        rec = Photo()
 
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')

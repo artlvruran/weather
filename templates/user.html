@@ -6,6 +6,11 @@
         <div class="card">
             <div class="firstinfo">
                 <img src="{{ user.avatar(128)}}", alt="oops, something went wrong">
+                <form method="post" enctype="multipart/form-data">
+                    {{ form.csrf_token }}
+                    {{ form.image }}
+                    <button type="submit">Upload</button>
+                </form>
                 <div class="profileinfo">
                     <h1> {{ user.name }}</h1>
                     <h3>email: {{ user.email }}</h3>
