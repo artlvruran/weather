@@ -717,3 +717,282 @@ INFO:werkzeug: * Running on all addresses (0.0.0.0)
    WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.1.8:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:24] "[32mGET /user/artlvr HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:24] "GET /login?next=%2Fuser%2Fartlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:24] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:32] "[32mPOST /login?next=%2Fuser%2Fartlvr HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:35] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:36] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:42] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:42] "[33mGET /static/tmp/pix.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:58:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:59:18] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:59:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 16:59:18] "[33mGET /static/tmp/pix_1.png HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:01:15] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:01:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:01:15] "GET /static/tmp/pix.png HTTP/1.1" 200 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:01:25] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:01:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:01:25] "GET /static/tmp/pix.jpeg HTTP/1.1" 200 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:02:06] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:02:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:02:06] "[36mGET /static/tmp/pix.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:06:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:14:15] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:14:15] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:14:15] "[36mGET /static/tmp/pix.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:15:19] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:15:19] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:15:19] "[36mGET /static/tmp/pix.jpeg HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:21:23] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:21:23] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:21:23] "[36mGET /static/tmp/pix.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:25:33] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:25:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:25:34] "[36mGET /static/tmp/pix.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:26:16] "GET /static/tmp/pix.jpeg HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:29:52] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:29:52] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:29:52] "[36mGET /static/tmp/pix.jpeg HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:32:03] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:32:03] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:32:03] "[36mGET /static/tmp/pix.jpeg HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:33:51] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:33:51] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:33:51] "[36mGET /static/tmp/pix.jpeg HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:34:03] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:34:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:34:03] "[36mGET /static/tmp/pix.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:34:09] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:34:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:34:09] "[36mGET /static/tmp/pix.jpeg HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:34:22] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:34:22] "GET /static/tmp/maxresdefault.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:34:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:42:53] "[32mGET /map/Washington HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:42:53] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:42:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:43:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:45:56] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:45:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:45:56] "[36mGET /static/tmp/maxresdefault.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:46:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+ERROR:main:Exception on /weather/Washington [GET]
+Traceback (most recent call last):
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\marin\Desktop\weather\data\weather.py", line 53, in get_weather
+    "city": weather_response["name"] if weather_response["name"] else city,
+KeyError: 'name'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:51:58] "[35m[1mGET /weather/Washington HTTP/1.1[0m" 500 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+ERROR:main:Exception on /weather/Washington [GET]
+Traceback (most recent call last):
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\marin\Desktop\weather\data\weather.py", line 53, in get_weather
+    "city": weather_response["name"] if weather_response["name"] else city,
+KeyError: 'name'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:53:14] "[35m[1mGET /weather/Washington HTTP/1.1[0m" 500 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:53:24] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:53:24] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:53:24] "[36mGET /static/tmp/maxresdefault.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:55:19] "[32mGET /map/Washington HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:55:19] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:55:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 17:58:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:01:44] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:01:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:02:02] "[32mPOST /map/-77.036536/38.899513 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:02:02] "[32mGET /map/Нижневартовск,%20Ханты-Мансийский%20автономный%20округ%20-%20Югра,%20Россия HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:02:02] "GET /map/76.558902/60.938545 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:02:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:04:25] "[32mPOST /map/76.558902/60.938545 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:04:27] "[32mGET /map/Краков HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:04:27] "GET /map/19.936742/50.061971 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:04:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:04:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:14] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:15] "[36mGET /static/tmp/maxresdefault.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:40] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:40] "[32mGET /weather/Moscow HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:41] "GET /login?next=%2Fweather%2FMoscow HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:41] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:55] "[32mPOST /register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:55] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:05:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+ERROR:main:Exception on /weather/Washington [GET]
+Traceback (most recent call last):
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\marin\Desktop\weather\data\weather.py", line 53, in get_weather
+    "city": weather_response["name"] if weather_response["name"] else city,
+KeyError: 'name'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:00] "[35m[1mGET /weather/Washington HTTP/1.1[0m" 500 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=43.078598&lon=0.19471&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+ERROR:main:Exception on /weather/user [GET]
+Traceback (most recent call last):
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\marin\Desktop\weather\data\weather.py", line 53, in get_weather
+    "city": weather_response["name"] if weather_response["name"] else city,
+KeyError: 'name'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:08] "[35m[1mGET /weather/user HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:14] "[33mGET /weather/user/great_bot HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+ERROR:main:Exception on /weather/Washington [GET]
+Traceback (most recent call last):
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\marin\Desktop\weather\data\weather.py", line 53, in get_weather
+    "city": weather_response["name"] if weather_response["name"] else city,
+KeyError: 'name'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:24] "[35m[1mGET /weather/Washington HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /user/email@enail.com [GET]
+Traceback (most recent call last):
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Users/marin/Desktop/weather/main.py", line 90, in user
+    if user.name == current_user.name:
+AttributeError: 'NoneType' object has no attribute 'name'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:37] "[35m[1mGET /user/email@enail.com HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:41] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:50] "[33mGET /signup HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:56] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: great_bot
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:57] "GET /user/great_bot HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:06:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: great_bot
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:07:07] "POST /user/great_bot HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:07:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:07:07] "GET /static/tmp/pix_1.png HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:11:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:11:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:11:53] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:11:58] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:08] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: great_bot
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:10] "GET /user/great_bot HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:10] "[36mGET /static/tmp/pix_1.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:12] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:12] "[32mGET /weather/Moscow HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:12] "GET /login?next=%2Fweather%2FMoscow HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:16] "[32mPOST /login?next=%2Fweather%2FMoscow HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+ERROR:main:Exception on /weather/Washington [GET]
+Traceback (most recent call last):
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\marin\AppData\Roaming\Python\Python38\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\marin\Desktop\weather\data\weather.py", line 53, in get_weather
+    "city": weather_response["name"] if weather_response["name"] else city,
+KeyError: 'name'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:18] "[35m[1mGET /weather/Washington HTTP/1.1[0m" 500 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:23] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:24] "[36mGET /static/tmp/maxresdefault.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:15:44] "[32mGET /map/Washington HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:15:44] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:15:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -

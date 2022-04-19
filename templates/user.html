@@ -8,8 +8,8 @@
                 <img src="{{ user.avatar(128)}}", alt="oops, something went wrong">
                 <form method="post" enctype="multipart/form-data">
                     {{ form.csrf_token }}
+                    <button type="submit" class="submit-feedback">Upload photo</button>
                     {{ form.image }}
-                    <button type="submit" class="submit-feedback">Upload</button>
                 </form>
                 <div class="profileinfo">
                     <h1> {{ user.name }}</h1>
