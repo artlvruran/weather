@@ -996,3 +996,7 @@ INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:12:24] "[36mGET /static/tmp/maxresd
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:15:44] "[32mGET /map/Washington HTTP/1.1[0m" 302 -
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:15:44] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:15:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:26:38] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:26:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:26:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
