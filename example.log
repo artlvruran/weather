@@ -1313,3 +1313,25 @@ INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:33:02] "[36mGET /static/tmp/knight.
 INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:33:15] "[32mGET /map/Washington HTTP/1.1[0m" 302 -
 INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:33:15] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:33:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:42:56] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:42:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:42:58] "[36mGET /static/tmp/knight.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:44:14] "[32mGET /map/Washington HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:44:14] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:44:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:47:19] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:47:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:48:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:48:32] "[32mGET /weather/Moscow HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:48:32] "GET /login?city=Moscow&next=%2Fweather%2FMoscow HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:48:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:51:15] "[32mGET /weather/Moscow HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:51:15] "GET /login?city=Moscow&next=%2Fweather%2FMoscow HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:51:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:53:05] "[32mPOST /login?city=Moscow&next=%2Fweather%2FMoscow HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:53:08] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:53:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:53:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
