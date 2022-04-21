@@ -1000,3 +1000,316 @@ INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:26:38] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:26:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 18:26:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:24:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:24:08] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:24:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:24:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:24:16] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:24:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:24:24] "[32mGET /map/Washington HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:24:25] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:24:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:30:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:30:58] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:31:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:31:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:31:56] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 22:31:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:36:57] "[32mGET /user/artlvr HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:36:57] "GET /login?next=%2Fuser%2Fartlvr&username=artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:36:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:37:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:37:06] "[32mPOST /login?next=%2Fuser%2Fartlvr&username=artlvr HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:37:09] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:37:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:37:28] "[32mGET /map/Washington HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:37:28] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:37:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:37:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:47:24] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:47:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:49:34] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:49:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:52:18] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:52:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:53:19] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:53:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:58:53] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 17:58:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:14:28] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:14:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:15:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:15:30] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:15:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:16:07] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:16:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:16:30] "[32mPOST /map/-77.036536/38.899513 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:16:30] "[32mGET /map/Нижневартовск HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:16:30] "GET /map/76.558902/60.938545 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:16:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:22:11] "GET /map/76.558902/60.938545 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:22:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:26:47] "GET /map/76.558902/60.938545 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:26:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:36:32] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:36:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:36:32] "[33mGET /static/tmp/maxresdefault.jpg HTTP/1.1[0m" 404 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:36:54] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:36:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:36:54] "GET /static/tmp/hero_strikes.gif HTTP/1.1" 200 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:37:10] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:37:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:37:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:39:38] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:39:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:40:39] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:40:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:41:08] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:41:10] "[36mGET /static/tmp/hero_strikes.gif HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:41:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:41:19] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:41:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:45:31] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:45:32] "GET /static/css/style.css HTTP/1.1" 200 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:45:40] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:45:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:45:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:46:44] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:46:46] "[36mGET /static/tmp/hero_strikes.gif HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:46:46] "GET /static/css/style.css HTTP/1.1" 200 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:46:55] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:46:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:47:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:48:08] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:48:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:49:02] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:49:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:49:02] "[36mGET /static/tmp/hero_strikes.gif HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:49:21] "POST /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:49:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:49:21] "GET /static/tmp/knight.jpg HTTP/1.1" 200 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:49:42] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:49:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:52:59] "GET /static/css/style.css HTTP/1.1" 200 -
+ERROR:main:Exception on /weather/Washington [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\data\weather.py", line 27, in get_weather
+    pos = response['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['Point']['pos'].split()
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:53:46] "[35m[1mGET /weather/Washington HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+ERROR:main:Exception on /weather/Washington [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Павел\PycharmProjects\weather_web_project\data\weather.py", line 27, in get_weather
+    pos = response['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['Point']['pos'].split()
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:54:55] "[35m[1mGET /weather/Washington HTTP/1.1[0m" 500 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:55:37] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:55:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:55:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:57:16] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:57:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:57:34] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:57:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:57:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:59:27] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:59:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:59:46] "[32mPOST /weather/Washington%20D.C. HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=47.86271&lon=-0.668122&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:59:49] "GET /weather/bordeau HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 18:59:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:00:00] "[32mPOST /weather/Ch\xe2teau-Gontier HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=44.84386&lon=-0.57882&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:00:02] "GET /weather/bordeaux HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:00:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=41.902695&lon=12.496176&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:00:29] "GET /weather/rome HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:00:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:00:39] "[32mPOST /weather/Trevi HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=41.904185&lon=12.453255&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:00:42] "GET /weather/vatikan HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:00:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:01:08] "[32mPOST /weather/State%20of%20the%20Vatican%20City HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=55.749451&lon=37.542824&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:01:12] "GET /weather/москва%20сити HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:01:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:02:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=55.749451&lon=37.542824&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:18:26] "GET /weather/москва%20сити HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:18:28] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:18:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=55.749451&lon=37.542824&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:33:43] "GET /weather/москва%20сити HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:33:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:37:33] "[32mPOST /weather/Dorogomilovo HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=32.816057&lon=35.003125&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:37:35] "GET /weather/Хайфа HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:37:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:42:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:43:47] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:43:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:43:49] "[36mGET /static/tmp/knight.jpg HTTP/1.1[0m" 304 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:43:54] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:43:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:49:55] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:49:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:03] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:03] "[32mGET /weather/Moscow HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:03] "GET /login?city=Moscow&next=%2Fweather%2FMoscow HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:05] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:08] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:54:10] "[33mGET /map/ HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:55:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 19:55:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:03:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:03:41] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:03:43] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:03:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:03:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:04:22] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:04:23] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:05:26] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:05:27] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:06:22] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:06:23] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:06:52] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:07:22] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:07:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:13:50] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:13:52] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:14:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:15:58] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:15:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:17:02] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:17:03] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:18:26] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:18:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:20:02] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:20:03] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:20:56] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:20:57] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:21:48] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:21:49] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:22:24] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:22:26] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:22:57] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:22:58] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:25:07] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:25:09] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:28:44] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:28:46] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:28:49] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:28:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:29:48] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:29:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:29:55] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:29:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:31:22] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:31:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:31:32] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:31:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:32:20] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:32:22] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:32:24] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:32:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:32:28] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:32:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:32:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+WARNING:root:https://api.openweathermap.org/data/2.5/weather?lat=38.899513&lon=-77.036536&lang=en&appid=1123bb2d4b885327b25dcfe7dee216a7
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:32:37] "GET /weather/Washington HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:32:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+WARNING:root:user: artlvr
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:33:02] "GET /user/artlvr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:33:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:33:02] "[36mGET /static/tmp/knight.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:33:15] "[32mGET /map/Washington HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:33:15] "GET /map/-77.036536/38.899513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2022 20:33:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -

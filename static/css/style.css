@@ -426,3 +426,29 @@ label {
     background-position: 100% 0;
   }
 }
+
+.login-wrap {
+  color: white;
+  width:100%;
+  margin:auto;
+  max-width:700px;
+  min-height:1000px;
+  position:relative;
+  background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+  background-size: cover;
+  box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(40,57,101,.9);
+}
+.form-style {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  background: rgba(255,255,255,.1);
+  width: 100%;
+}

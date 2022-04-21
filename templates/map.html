@@ -13,7 +13,18 @@
         </div>
       </form>
     </div>
-    <input type="radio" value="pressure">
+    <div>
+        <input type="radio" name="map_radio" value="clouds" id="clouds" onchange="radioChanged()" checked="checked">
+        <label for="pressure">clouds</label>
+        <input type="radio" name="map_radio" value="pressure" id="pressure" onchange="radioChanged()">
+        <label for="pressure">pressure</label>
+        <input type="radio" name="map_radio" value="temperature" id="temp" onchange="radioChanged()">
+        <label for="temp">temperature</label>
+        <input type="radio" name="map_radio" value="precipitation" id="precipitation" onchange="radioChanged()">
+        <label for="precipitation">precipitation</label>
+        <input type="radio" name="map_radio" value="wind" id="wind" onchange="radioChanged()">
+        <label for="wind">wind_speed</label>
+    </div>
     <div style="width: 100%; height: 80vh; border-radius:20px;" id="map"></div>
     <script>
         var city = { lng: {{lon}}, lat:{{lat}}}
@@ -48,6 +59,23 @@
             maxZoom: 12,
             attribution: 'OpenWeatherMap.Org'
         }
+        var pressureSource = {
+            type: 'raster',
+            tiles: ['https://tile.openweathermap.org/map/pressure_new/{z}/{x}/{y}.png?appid={{WEATHER_API}}'],
+            tileSize: 256,
+            minZoom: 0,
+            maxZoom: 12,
+            attribution: 'OpenWeatherMap.Org'
+        }
+        var windSource = {
+            type: 'raster',
+            tiles: ['https://tile.openweathermap.org/map/wind_new/{z}/{x}/{y}.png?appid={{WEATHER_API}}'],
+            tileSize: 256,
+            minZoom: 0,
+            maxZoom: 12,
+            attribution: 'OpenWeatherMap.Org'
+        }
+
         var cloudLayer = {
             'id': 'cloud_layer',
             'type': 'raster',
@@ -66,22 +94,70 @@
             'source': 'temp_source',
             'layout': { 'visibility': 'visible'}
         }
+        var pressureLayer = {
+            'id': 'pressure_layer',
+            'type': 'raster',
+            'source': 'pressure_source',
+            'layout': { 'visibility': 'visible'}
+        }
+        var windLayer = {
+            'id': 'wind_layer',
+            'type': 'raster',
+            'source': 'wind_source',
+            'layout': { 'visibility': 'visible'}
+        }
 
-        map.on('load', function(){
+        let currentLayerId = 'cloud_layer'
+        let currentLayerSource = 'cloud_source'
+
+        map.on('load', function() {
             map.addSource('cloud_source', cloudSource)
             map.addLayer(cloudLayer)
-
-            map.addSource('rain_source', rainSource)
-            map.addLayer(rainLayer)
-
-            map.addSource('temp_source', tempSource)
-            map.addLayer(tempLayer)
         })
+        function radioChanged(myRadio) {
+            let currentRadio = document.querySelector('input[name="map_radio"]:checked').value
+            map.removeLayer(currentLayerId)
+            map.removeSource(currentLayerSource)
+            if (currentRadio == 'clouds') {
+                map.addSource('cloud_source', cloudSource)
+                map.addLayer(cloudLayer)
+                currentLayerId = 'cloud_layer'
+                currentLayerSource = 'cloud_source'
+            }
+            else if (currentRadio == 'precipitation'){
+                map.addSource('rain_source', rainSource)
+                map.addLayer(rainLayer)
+                currentLayerId = 'rain_layer'
+                currentLayerSource = 'rain_source'
+            }
+            else if (currentRadio == 'temperature') {
+                map.addSource('temp_source', tempSource)
+                map.addLayer(tempLayer)
+                currentLayerId = 'temp_layer'
+                currentLayerSource = 'temp_source'
+            }
+            else if (currentRadio == 'pressure') {
+                map.addSource('pressure_source', pressureSource)
+                map.addLayer(pressureLayer)
+                currentLayerId = 'pressure_layer'
+                currentLayerSource = 'pressure_source'
+            }
+            else if (currentRadio == 'wind') {
+                map.addSource('wind_source', windSource)
+                map.addLayer(windLayer)
+                currentLayerId = 'wind_layer'
+                currentLayerSource = 'wind_source'
+            }
+        }
 
         map.on('click', function (event) {
             console.log(event.lngLat)
             weatherForCityAround(event.lngLat)
         })
+
+        var nav = new tt.NavigationControl({});
+        map.addControl(nav, 'top-left');
+
         function createDOM(city) {
             let div = document.createElement('div')
 
