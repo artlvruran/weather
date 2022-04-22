@@ -35,19 +35,21 @@ def get_weather(city):
     forecast = requests.get(forecast_request).json()
 
     forecast_hourly = [{
-                        "time": datetime.datetime.utcfromtimestamp(int(forecast["hourly"][i]["dt"]) + int(forecast["timezone_offset"])).strftime('%H:%M'),
-                        "temp": f'{celc_from_kelvin(forecast["hourly"][i]["temp"])} °C',
-                        "icon": f'https://openweathermap.org/img/wn/{forecast["hourly"][i]["weather"][0]["icon"]}.png'
-                        }
-                       for i in range(len(forecast["hourly"]))]
+        "time": datetime.datetime.utcfromtimestamp(
+            int(forecast["hourly"][i]["dt"]) + int(forecast["timezone_offset"])).strftime('%H:%M'),
+        "temp": f'{celc_from_kelvin(forecast["hourly"][i]["temp"])} °C',
+        "icon": f'https://openweathermap.org/img/wn/{forecast["hourly"][i]["weather"][0]["icon"]}.png'
+    }
+        for i in range(len(forecast["hourly"]))]
 
     forecast_daily = [{
-                        "time": datetime.datetime.utcfromtimestamp(int(forecast["daily"][i]["dt"]) + int(forecast["timezone_offset"])).strftime('%d.%m'),
-                        "temp_day": f'{celc_from_kelvin(forecast["daily"][i]["temp"]["day"])} °C',
-                        "temp_night": f'{celc_from_kelvin(forecast["daily"][i]["temp"]["night"])} °C',
-                        "icon": f'https://openweathermap.org/img/wn/{forecast["daily"][i]["weather"][0]["icon"]}.png'
-                        }
-                       for i in range(len(forecast["daily"]))]
+        "time": datetime.datetime.utcfromtimestamp(
+            int(forecast["daily"][i]["dt"]) + int(forecast["timezone_offset"])).strftime('%d.%m'),
+        "temp_day": f'{celc_from_kelvin(forecast["daily"][i]["temp"]["day"])} °C',
+        "temp_night": f'{celc_from_kelvin(forecast["daily"][i]["temp"]["night"])} °C',
+        "icon": f'https://openweathermap.org/img/wn/{forecast["daily"][i]["weather"][0]["icon"]}.png'
+    }
+        for i in range(len(forecast["daily"]))]
 
     params = {
         "city": weather_response["name"] if weather_response["name"] else city,
