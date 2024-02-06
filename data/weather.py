@@ -65,13 +65,13 @@ def get_weather(city):
         "wind_speed": f'{weather_response["wind"]["speed"]} m/s'
     }
 
-    request = f'https://pixabay.com/api/?key={PIXABAY_API_KEY}&q={params["city"]}&image_type=photo&pretty=true'
+    request = f'https://serpapi.com/search?engine=yandex_images&text={params["city"]}&api_key={SERPAPI_API_KEY}'
     image_response = requests.get(request).json()
     try:
-        params["image"] = image_response["hits"][0]['largeImageURL']
+        params["image"] = image_response["images_results"][0]["original"]
     except IndexError:
         try:
-            request = f'https://pixabay.com/api/?key={PIXABAY_API_KEY}&q={city}&image_type=photo&pretty=true'
+            request = f'https://serpapi.com/search?engine=yandex_images&text={city}&api_key={SERPAPI_API_KEY}'
             image_response = requests.get(request).json()
             params["image"] = image_response["hits"][0]['largeImageURL']
         except IndexError:
